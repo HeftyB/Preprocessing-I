@@ -303,14 +303,57 @@ body {
   border: 1px solid black;
   border-style: none none inset none;
 }
-.wrapper .outerLayer .innerLayer .workHist {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.wrapper .outerLayer .innerLayer div.minimalistBlack {
+  border: 3px solid #000000;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
 }
-.wrapper .outerLayer .innerLayer .workHist p {
-  border: 1px solid black;
-  font-size: 300%;
+.wrapper .outerLayer .innerLayer .divTable.minimalistBlack .divTableCell,
+.wrapper .outerLayer .innerLayer .divTable.minimalistBlack .divTableHead {
+  border: 1px solid #000000;
+  padding: 5px 4px;
+}
+.wrapper .outerLayer .innerLayer .divTable.minimalistBlack .divTableBody .divTableCell {
+  font-size: 13px;
+}
+.wrapper .outerLayer .innerLayer .divTable.minimalistBlack .divTableHeading {
+  background: #CFCFCF;
+  background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  border-bottom: 3px solid #000000;
+}
+.wrapper .outerLayer .innerLayer .divTable.minimalistBlack .divTableHeading .divTableHead {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+}
+.wrapper .outerLayer .innerLayer .minimalistBlack .tableFootStyle {
+  font-size: 14px;
+}
+.wrapper .outerLayer .innerLayer .divTable {
+  display: table;
+}
+.wrapper .outerLayer .innerLayer .divTableRow {
+  display: table-row;
+}
+.wrapper .outerLayer .innerLayer .divTableHeading {
+  display: table-header-group;
+}
+.wrapper .outerLayer .innerLayer .divTableCell,
+.wrapper .outerLayer .innerLayer .divTableHead {
+  display: table-cell;
+}
+.wrapper .outerLayer .innerLayer .divTableHeading {
+  display: table-header-group;
+}
+.wrapper .outerLayer .innerLayer .divTableFoot {
+  display: table-footer-group;
+}
+.wrapper .outerLayer .innerLayer .divTableBody {
+  display: table-row-group;
 }
 .wrapper footer input[type=text],
 .wrapper footer select,
