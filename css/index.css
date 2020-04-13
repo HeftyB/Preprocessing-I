@@ -298,6 +298,9 @@ body {
   background-color: #686573;
   padding: 1%;
 }
+.wrapper .outerLayer .innerLayer .aboutMe p b {
+  font-size: 200%;
+}
 .wrapper .outerLayer .innerLayer .aboutMe h2 {
   font-size: 200%;
   border: 1px solid black;
