@@ -255,8 +255,7 @@ body {
     flex-direction: column;
   }
   .wrapper .outerLayer .projects {
-    order: 2;
-    border: 2px solid green;
+    order: 1;
   }
   .wrapper .outerLayer .projects .project {
     display: flex;
@@ -277,6 +276,11 @@ body {
   border: 1px solid black;
   border-style: none solid none none;
   padding: 2%;
+}
+@media (max-width: 700px) {
+  .wrapper .outerLayer .projects {
+    border-style: none none none none;
+  }
 }
 .wrapper .outerLayer .projects .project img {
   width: 200px;
