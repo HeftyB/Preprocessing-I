@@ -219,7 +219,7 @@ body {
 .wrapper header h1 {
   font-size: 200%;
   animation-name: blink;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
 }
 .wrapper header nav {
@@ -232,7 +232,7 @@ body {
   letter-spacing: 4px;
   border: 1px solid black;
   border-style: none none solid none;
-  color: yellowgreen;
+  color: #d6d7dc;
 }
 .wrapper .heroImg img {
   width: 100%;
@@ -285,29 +285,17 @@ body {
   border: 1px solid black;
   font-size: 300%;
 }
-.wrapper footer {
-  /* Style the submit button with a specific background color etc */
-  /* When moving the mouse over the submit button, add a darker green color */
-  /* Add a background color and some padding around the form */
-}
 .wrapper footer input[type=text],
 .wrapper footer select,
 .wrapper footer textarea {
   width: 100%;
-  /* Full width */
   padding: 12px;
-  /* Some padding */
-  border: 1px solid #ccc;
-  /* Gray border */
+  border: 1px solid pink;
   border-radius: 4px;
-  /* Rounded borders */
   box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
   margin-top: 6px;
-  /* Add a top margin */
   margin-bottom: 16px;
-  /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+  resize: vertical;
 }
 .wrapper footer input[type=submit] {
   background-color: #4CAF50;

@@ -4,11 +4,19 @@
    License: none (public domain)
 */
 
+@mainColor: cornflowerblue;
 @accentColor: #d8b9aa;
 @accentColor2: #686573;
+@textColor: #d6d7dc;
 
 .borderStyle(@1, @2, @3, @4) {
 	border-style: @1 @2 @3 @4;
+}
+
+.animation (@aniname, @anidur, @anicount) {
+	animation-name: @aniname;
+	animation-duration: @anidur;
+	animation-iteration-count: @anicount;
 }
 
 @keyframes blink {
@@ -72,7 +80,7 @@ table {
 
 html, body {
 	height: 100%;
-	background-color: cornflowerblue;
+	background-color: @mainColor;
 }
 
 .wrapper {
@@ -86,9 +94,7 @@ html, body {
 
 		h1 {
 			font-size: 200%;
-			animation-name: blink;
-			animation-duration: 2s;
-			animation-iteration-count: infinite;
+			.animation(blink, 1s, infinite)
 		}
 		
 		nav {
@@ -102,7 +108,7 @@ html, body {
 				letter-spacing: 4px;
 				border: 1px solid black;
 				.borderStyle(none, none, solid, none);
-				color: yellowgreen;
+				color: @textColor;
 			}
 		}
 	}
@@ -177,17 +183,16 @@ html, body {
 	footer {
 
 		input[type=text], select, textarea {
-			width: 100%; /* Full width */
-			padding: 12px; /* Some padding */ 
-			border: 1px solid #ccc; /* Gray border */
-			border-radius: 4px; /* Rounded borders */
-			box-sizing: border-box; /* Make sure that padding and width stays in place */
-			margin-top: 6px; /* Add a top margin */
-			margin-bottom: 16px; /* Bottom margin */
-			resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+			width: 100%; 
+			padding: 12px;
+			border: 1px solid pink; 
+			border-radius: 4px; 
+			box-sizing: border-box;
+			margin-top: 6px; 
+			margin-bottom: 16px; 
+			resize: vertical;
 		}
 		
-		/* Style the submit button with a specific background color etc */
 		input[type=submit] {
 			background-color: #4CAF50;
 			color: white;
@@ -197,12 +202,11 @@ html, body {
 			cursor: pointer;
 		}
 		
-		/* When moving the mouse over the submit button, add a darker green color */
 		input[type=submit]:hover {
 			background-color: #45a049;
 		}
 		
-		/* Add a background color and some padding around the form */
+
 		.contact {
 			border-radius: 5px;
 			background-color: cornflowerblue;
