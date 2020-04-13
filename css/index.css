@@ -2,6 +2,14 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@keyframes blink {
+  from {
+    color: black;
+  }
+  to {
+    color: white;
+  }
+}
 @font-face {
   font-family: 'Baloo Paaji 2';
   font-style: normal;
@@ -210,6 +218,9 @@ body {
 }
 .wrapper header h1 {
   font-size: 200%;
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 .wrapper header nav {
   margin: 1% 0%;
@@ -221,6 +232,7 @@ body {
   letter-spacing: 4px;
   border: 1px solid black;
   border-style: none none solid none;
+  color: yellowgreen;
 }
 .wrapper .heroImg img {
   width: 100%;
@@ -252,7 +264,64 @@ body {
   align-content: center;
   margin: 2%;
 }
+.wrapper .outerLayer .innerLayer h2 {
+  font-size: 275%;
+}
+.wrapper .outerLayer .innerLayer .aboutMe {
+  background-color: #686573;
+  padding: 1%;
+}
+.wrapper .outerLayer .innerLayer .aboutMe h2 {
+  font-size: 200%;
+  border: 1px solid black;
+  border-style: none none inset none;
+}
 .wrapper .outerLayer .innerLayer .workHist {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.wrapper .outerLayer .innerLayer .workHist p {
+  border: 1px solid black;
+  font-size: 300%;
+}
+.wrapper footer {
+  /* Style the submit button with a specific background color etc */
+  /* When moving the mouse over the submit button, add a darker green color */
+  /* Add a background color and some padding around the form */
+}
+.wrapper footer input[type=text],
+.wrapper footer select,
+.wrapper footer textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+}
+.wrapper footer input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.wrapper footer input[type=submit]:hover {
+  background-color: #45a049;
+}
+.wrapper footer .contact {
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  padding: 20px;
 }
