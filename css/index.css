@@ -250,6 +250,29 @@ body {
   margin: 2%;
   display: flex;
 }
+@media (max-width: 700px) {
+  .wrapper .outerLayer {
+    flex-direction: column;
+  }
+  .wrapper .outerLayer .projects {
+    order: 2;
+    border: 2px solid green;
+  }
+  .wrapper .outerLayer .projects .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 0%;
+  }
+  .wrapper .outerLayer .projects .project a {
+    color: #d6d7dc;
+    text-decoration: none;
+    background-color: black;
+  }
+  .wrapper .outerLayer:last-child {
+    order: 1;
+  }
+}
 .wrapper .outerLayer .projects {
   border: 1px solid black;
   border-style: none solid none none;
