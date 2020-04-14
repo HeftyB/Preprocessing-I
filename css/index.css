@@ -224,11 +224,26 @@ body {
   font-family: 'IBM Plex Serif', serif;
   padding: 4%;
 }
-.wrapper header h1 {
+.wrapper header .TIT {
+  position: relative;
+  font-weight: 200;
   font-size: 200%;
   animation-name: blink;
   animation-duration: 1s;
   animation-iteration-count: infinite;
+}
+.wrapper header .TIT .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.wrapper header .TIT .letters {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
 }
 .wrapper header nav {
   margin: 1% 0%;
