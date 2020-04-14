@@ -25,6 +25,11 @@
 	to {color: white}
 }
 
+@keyframes blink2 {
+	from {color: darkorchid}
+	to {color: lime}
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;600&family=Comic+Neue:wght@300&family=Open+Sans:wght@300&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;600&family=Comic+Neue:wght@300&family=IBM+Plex+Serif:wght@700&family=Open+Sans:wght@300&display=swap');
@@ -103,6 +108,7 @@ html, body {
 			margin: 1% 0%;
 			display: flex;
 			justify-content: space-between;
+			flex-wrap: wrap;
 
 			a {
 				text-decoration: none;
@@ -162,10 +168,18 @@ html, body {
 			@media @mobile {
 				.borderStyle (none, none, none, none);
 			}
-			padding: 2%;
+			padding: 4%;
 
-			.project img {
-				width: 200px;
+			.project {
+				padding: 2%;
+				h3 {
+					font-size: 150%;
+					text-transform: uppercase;
+				}
+				img {
+					width: 200px;
+					padding: 5% 0%;
+				}
 			}
 		}
 
@@ -238,6 +252,15 @@ html, body {
 	}
 
 	footer {
+
+		h2 {
+			border: 1px solid black;
+			.borderStyle(solid, none, none, none);
+			padding-top: 10px;
+			font-size: 300%;
+			.animation(blink2, 1s, infinite)
+
+		}
 
 		input[type=text], select, textarea {
 			width: 100%; 

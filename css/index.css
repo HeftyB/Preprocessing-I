@@ -10,6 +10,14 @@
     color: white;
   }
 }
+@keyframes blink2 {
+  from {
+    color: darkorchid;
+  }
+  to {
+    color: lime;
+  }
+}
 @font-face {
   font-family: 'Baloo Paaji 2';
   font-style: normal;
@@ -226,6 +234,7 @@ body {
   margin: 1% 0%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .wrapper header nav a {
   text-decoration: none;
@@ -275,15 +284,23 @@ body {
 .wrapper .outerLayer .projects {
   border: 1px solid black;
   border-style: none solid none none;
-  padding: 2%;
+  padding: 4%;
 }
 @media (max-width: 700px) {
   .wrapper .outerLayer .projects {
     border-style: none none none none;
   }
 }
+.wrapper .outerLayer .projects .project {
+  padding: 2%;
+}
+.wrapper .outerLayer .projects .project h3 {
+  font-size: 150%;
+  text-transform: uppercase;
+}
 .wrapper .outerLayer .projects .project img {
   width: 200px;
+  padding: 5% 0%;
 }
 .wrapper .outerLayer .innerLayer {
   display: flex;
@@ -357,6 +374,15 @@ body {
 }
 .wrapper .outerLayer .innerLayer .divTableBody {
   display: table-row-group;
+}
+.wrapper footer h2 {
+  border: 1px solid black;
+  border-style: solid none none none;
+  padding-top: 10px;
+  font-size: 300%;
+  animation-name: blink2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 .wrapper footer input[type=text],
 .wrapper footer select,
