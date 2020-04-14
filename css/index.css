@@ -1,1 +1,432 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@keyframes blink {
+  from {
+    color: black;
+  }
+  to {
+    color: white;
+  }
+}
+@keyframes blink2 {
+  from {
+    color: darkorchid;
+  }
+  to {
+    color: lime;
+  }
+}
+@font-face {
+  font-family: 'Baloo Paaji 2';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Baloo Paaji 2 Regular'), local('BalooPaaji2-Regular'), url(https://fonts.gstatic.com/s/baloopaaji2/v1/i7dMIFFzbz-QHZUdV9_UGWZuYFI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Baloo Paaji 2';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Baloo Paaji 2 SemiBold'), local('BalooPaaji2-SemiBold'), url(https://fonts.gstatic.com/s/baloopaaji2/v1/i7dRIFFzbz-QHZUdV9_UGWZuWIq-OwQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Comic Neue';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Comic Neue Light'), local('ComicNeue-Light'), url(https://fonts.gstatic.com/s/comicneue/v1/4UaErEJDsxBrF37olUeD_wHLwps.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8-VQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Baloo Paaji 2';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Baloo Paaji 2 Regular'), local('BalooPaaji2-Regular'), url(https://fonts.gstatic.com/s/baloopaaji2/v1/i7dMIFFzbz-QHZUdV9_UGWZuYFI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Baloo Paaji 2';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Baloo Paaji 2 SemiBold'), local('BalooPaaji2-SemiBold'), url(https://fonts.gstatic.com/s/baloopaaji2/v1/i7dRIFFzbz-QHZUdV9_UGWZuWIq-OwQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Comic Neue';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Comic Neue Light'), local('ComicNeue-Light'), url(https://fonts.gstatic.com/s/comicneue/v1/4UaErEJDsxBrF37olUeD_wHLwps.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('IBM Plex Serif Bold'), local('IBMPlexSerif-Bold'), url(https://fonts.gstatic.com/s/ibmplexserif/v8/jizAREVNn1dOx-zrZ2X3pZvkTi2k_hIz.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8-VQ.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+html,
+body {
+  height: 100%;
+  background-color: cornflowerblue;
+}
+.wrapper {
+  background-color: #d8b9aa;
+  margin: 0% 10%;
+  font-family: 'Comic Neue', cursive;
+}
+.wrapper header {
+  font-family: 'IBM Plex Serif', serif;
+  padding: 4%;
+}
+.wrapper header .mane {
+  position: relative;
+  font-weight: 200;
+  font-size: 4em;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.wrapper header .mane .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.wrapper header .mane .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+.wrapper header nav {
+  margin: 1% 0%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wrapper header nav a {
+  text-decoration: none;
+  letter-spacing: 4px;
+  border: 1px solid black;
+  border-style: none solid none solid;
+  color: #d6d7dc;
+}
+.wrapper .heroImg img {
+  width: 100%;
+  height: 200px;
+}
+.wrapper .jobTitle h2 {
+  font-weight: bold;
+  font-size: 150%;
+  font-family: 'IBM Plex Serif', serif;
+  border: 1px solid black;
+  padding: 10px 0%;
+  border-style: none none solid none;
+}
+.wrapper .outerLayer {
+  margin: 2%;
+  display: flex;
+}
+@media (max-width: 700px) {
+  .wrapper .outerLayer {
+    flex-direction: column;
+  }
+  .wrapper .outerLayer .projects {
+    order: 1;
+  }
+  .wrapper .outerLayer .projects .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 0%;
+  }
+  .wrapper .outerLayer .projects .project a {
+    color: #d6d7dc;
+    text-decoration: none;
+    background-color: black;
+  }
+  .wrapper .outerLayer:last-child {
+    order: 1;
+  }
+}
+.wrapper .outerLayer .projects {
+  border: 1px solid black;
+  border-style: none solid none none;
+  padding: 4%;
+}
+@media (max-width: 700px) {
+  .wrapper .outerLayer .projects {
+    border-style: none none none none;
+  }
+}
+.wrapper .outerLayer .projects .project {
+  padding: 2%;
+}
+.wrapper .outerLayer .projects .project h3 {
+  font-size: 150%;
+  text-transform: uppercase;
+}
+.wrapper .outerLayer .projects .project img {
+  width: 200px;
+  padding: 5% 0%;
+}
+.wrapper .outerLayer .innerLayer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 2%;
+}
+.wrapper .outerLayer .innerLayer h2 {
+  font-size: 275%;
+  border: 1px solid black;
+  border-style: solid none solid none;
+}
+.wrapper .outerLayer .innerLayer .aboutMe {
+  background-color: #686573;
+  padding: 1%;
+}
+.wrapper .outerLayer .innerLayer .aboutMe p b {
+  font-size: 200%;
+  border: 0.5px solid black;
+}
+.wrapper .outerLayer .innerLayer .aboutMe h2 {
+  font-size: 200%;
+  border: 1px solid black;
+  border-style: none none inset none;
+}
+.wrapper .outerLayer .innerLayer div.minimalistBlack {
+  border: 3px solid #000000;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+.wrapper .outerLayer .innerLayer .divTable.minimalistBlack .divTableCell,
+.wrapper .outerLayer .innerLayer .divTable.minimalistBlack .divTableHead {
+  border: 1px solid #000000;
+  padding: 5px 4px;
+}
+.wrapper .outerLayer .innerLayer .divTable.minimalistBlack .divTableBody .divTableCell {
+  font-size: 13px;
+}
+.wrapper .outerLayer .innerLayer .divTable.minimalistBlack .divTableHeading {
+  background: #CFCFCF;
+  background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  border-bottom: 3px solid #000000;
+}
+.wrapper .outerLayer .innerLayer .divTable.minimalistBlack .divTableHeading .divTableHead {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+}
+.wrapper .outerLayer .innerLayer .minimalistBlack .tableFootStyle {
+  font-size: 14px;
+}
+.wrapper .outerLayer .innerLayer .divTable {
+  display: table;
+}
+.wrapper .outerLayer .innerLayer .divTableRow {
+  display: table-row;
+}
+.wrapper .outerLayer .innerLayer .divTableHeading {
+  display: table-header-group;
+}
+.wrapper .outerLayer .innerLayer .divTableCell,
+.wrapper .outerLayer .innerLayer .divTableHead {
+  display: table-cell;
+}
+.wrapper .outerLayer .innerLayer .divTableHeading {
+  display: table-header-group;
+}
+.wrapper .outerLayer .innerLayer .divTableFoot {
+  display: table-footer-group;
+}
+.wrapper .outerLayer .innerLayer .divTableBody {
+  display: table-row-group;
+}
+.wrapper footer h2 {
+  border: 1px solid black;
+  border-style: solid none none none;
+  padding-top: 10px;
+  font-size: 300%;
+  animation-name: blink2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.wrapper footer input[type=text],
+.wrapper footer select,
+.wrapper footer textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.wrapper footer input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.wrapper footer input[type=submit]:hover {
+  background-color: #45a049;
+}
+.wrapper footer .contact {
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  padding: 20px;
+}
