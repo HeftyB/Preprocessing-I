@@ -253,7 +253,7 @@ body {
   font-family: 'IBM Plex Serif', serif;
   border: 1px solid black;
   padding: 10px 0%;
-  border-style: none none dashed none;
+  border-style: none none solid none;
 }
 .wrapper .outerLayer {
   margin: 2%;
@@ -310,6 +310,8 @@ body {
 }
 .wrapper .outerLayer .innerLayer h2 {
   font-size: 275%;
+  border: 1px solid black;
+  border-style: solid none solid none;
 }
 .wrapper .outerLayer .innerLayer .aboutMe {
   background-color: #686573;
