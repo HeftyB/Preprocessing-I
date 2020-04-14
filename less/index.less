@@ -9,6 +9,7 @@
 @accentColor2: #686573;
 @textColor: #d6d7dc;
 @mobile: ~"(max-width: 700px)"; 
+@borderColor: black;
 
 .borderStyle(@1, @2, @3, @4) {
 	border-style: @1 @2 @3 @4;
@@ -99,28 +100,28 @@ html, body {
 		padding: 4%;
 			
 
-		.TIT {
-				position: relative;
-				font-weight: 200;
-				font-size: 200%;
-				.animation(blink, 1s, infinite);
-			
-			  
-			  .text-wrapper {
+		.mane {
+			position: relative;
+			font-weight: 200;
+			font-size: 4em;
+		
+		  
+			.text-wrapper {
 				position: relative;
 				display: inline-block;
 				padding-top: 0.2em;
 				padding-right: 0.05em;
 				padding-bottom: 0.1em;
 				overflow: hidden;
-			  }
-			  
-			  .letters {
+			}
+			
+			.letter {
 				transform-origin: 50% 100%;
 				display: inline-block;
 				line-height: 1em;
-			  	}
-			
+			}
+
+			.animation(blink, 1s, infinite)
 		}
 		
 		nav {
@@ -133,8 +134,8 @@ html, body {
 			a {
 				text-decoration: none;
 				letter-spacing: 4px;
-				border: 1px solid black;
-				.borderStyle(none, none, solid, none);
+				border: 1px solid @borderColor;
+				.borderStyle(none, solid, none, solid);
 				color: @textColor;
 			}
 		}
@@ -149,7 +150,7 @@ html, body {
 		font-weight: bold;
 		font-size: 150%;
 		font-family: 'IBM Plex Serif', serif;
-		border: 1px solid black;
+		border: 1px solid @borderColor;
 		padding: 10px 0%;
 		.borderStyle(none, none, solid, none)
 	}
@@ -183,7 +184,7 @@ html, body {
 
 		.projects{
 
-			border: 1px solid black;
+			border: 1px solid @borderColor;
 			.borderStyle(none, solid, none, none);
 			@media @mobile {
 				.borderStyle (none, none, none, none);
@@ -211,7 +212,7 @@ html, body {
 
 			h2 {
 				font-size: 275%;
-				border: 1px solid black;
+				border: 1px solid @borderColor;
 				.borderStyle(solid, none, solid, none);
 			}
 
@@ -219,6 +220,7 @@ html, body {
 
 				p b {
 					font-size: 200%;
+					border: 0.5px solid @borderColor;
 				}
 
 				background-color: @accentColor2;
@@ -276,7 +278,7 @@ html, body {
 	footer {
 
 		h2 {
-			border: 1px solid black;
+			border: 1px solid @borderColor;
 			.borderStyle(solid, none, none, none);
 			padding-top: 10px;
 			font-size: 300%;
@@ -287,7 +289,7 @@ html, body {
 		input[type=text], select, textarea {
 			width: 100%; 
 			padding: 12px;
-			border: 1px solid pink; 
+			border: 1px solid @borderColor; 
 			border-radius: 4px; 
 			box-sizing: border-box;
 			margin-top: 6px; 
@@ -316,3 +318,4 @@ html, body {
 		}
 	}
 }
+

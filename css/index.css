@@ -224,15 +224,15 @@ body {
   font-family: 'IBM Plex Serif', serif;
   padding: 4%;
 }
-.wrapper header .TIT {
+.wrapper header .mane {
   position: relative;
   font-weight: 200;
-  font-size: 200%;
+  font-size: 4em;
   animation-name: blink;
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
-.wrapper header .TIT .text-wrapper {
+.wrapper header .mane .text-wrapper {
   position: relative;
   display: inline-block;
   padding-top: 0.2em;
@@ -240,7 +240,7 @@ body {
   padding-bottom: 0.1em;
   overflow: hidden;
 }
-.wrapper header .TIT .letters {
+.wrapper header .mane .letter {
   transform-origin: 50% 100%;
   display: inline-block;
   line-height: 1em;
@@ -255,7 +255,7 @@ body {
   text-decoration: none;
   letter-spacing: 4px;
   border: 1px solid black;
-  border-style: none none solid none;
+  border-style: none solid none solid;
   color: #d6d7dc;
 }
 .wrapper .heroImg img {
@@ -334,6 +334,7 @@ body {
 }
 .wrapper .outerLayer .innerLayer .aboutMe p b {
   font-size: 200%;
+  border: 0.5px solid black;
 }
 .wrapper .outerLayer .innerLayer .aboutMe h2 {
   font-size: 200%;
@@ -406,7 +407,7 @@ body {
 .wrapper footer textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid pink;
+  border: 1px solid black;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
